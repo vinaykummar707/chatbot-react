@@ -20,7 +20,7 @@ import {
   HiOutlinePlus,
   HiPlus,
   HiStar,
-  HiSun,
+  HiSun, HiTrash,
 } from "react-icons/hi2";
 
 export const MessagesScreen = () => {
@@ -43,22 +43,22 @@ export const MessagesScreen = () => {
             />
 
             <HiBookOpen
-              className={"dark:text-neutral-600 text-gray-400"}
+              className={"dark:text-neutral-600 text-gray-300"}
               size={32}
             />
 
             <HiStar
-              className={"dark:text-neutral-600 text-gray-400"}
+              className={"dark:text-neutral-600 text-gray-300"}
               size={32}
             />
 
             <HiSun
-              className={"dark:text-neutral-600 text-gray-400"}
+              className={"dark:text-neutral-600 text-gray-300"}
               size={32}
             />
 
             <HiCog6Tooth
-              className={"dark:text-neutral-600 text-gray-400"}
+              className={"dark:text-neutral-600 text-gray-300"}
               size={32}
             />
           </div>
@@ -69,18 +69,18 @@ export const MessagesScreen = () => {
             alt="Image Description"
           />
         </div>
-        <div className=" flex flex-col w-[25%] gap-0 border-r justify-between dark:border-neutral-700   dark:bg-neutral-800 ">
-          <div className="flex flex-col p-4 gap-3">
-            <h1 className="dark:text-white  text-xl font-bold">Messages</h1>
+        <div className=" flex flex-col w-[25%] bg-gray-100 items-center gap-0 border-r justify-between dark:border-neutral-700   dark:bg-neutral-800 ">
+          <div className="flex flex-col p-4 w-full gap-3">
+            <h1 className="dark:text-white  text-lg font-bold">Messages</h1>
             <input
               type="text"
-              className="w-full px-4 py-2 bg-neutral-100 border-neutral-200 dark:bg-neutral-800 border   dark:border-neutral-700 rounded-xl"
+              className="w-full px-4 py-2 bg-white border-neutral-300 dark:bg-neutral-200 border   dark:border-neutral-700 rounded-xl"
               placeholder="Search here"
             />
           </div>
 
-          <div className="flex flex-1  flex-col px-4  gap-2 ">
-            <div className="flex border rounded-xl border-blue-200 bg-blue-100 dark:bg-neutral-700 items-center justify-start  gap-3  p-4  dark:border-neutral-600 ">
+          <div className="flex flex-1  flex-col px-4 ">
+            <div className="flex border-l-2 border-purple-600 bg-white dark:bg-neutral-700 items-center justify-start  gap-3  p-4  dark:border-neutral-600 ">
               {/*<div*/}
               {/*  className={*/}
               {/*    "p-2 rounded-full  bg-neutral-200 flex items-center justify-center"*/}
@@ -93,13 +93,17 @@ export const MessagesScreen = () => {
                   What is the maximum number of weeks of FML can I request to
                   take off in a year? What does CASM stand for ?
                 </p>
-                <p className="dark:text-neutral-400  text-xs text-neutral-500  line-clamp-1">
-                  17 July 2023 at 12:00 PM
-                </p>
+                <div className={'w-full inline-flex justify-between items-center'}>
+                  <p className="dark:text-neutral-400  text-xs text-neutral-500  line-clamp-1">
+                    17 July 2023 at 12:00 PM
+                  </p>
+                  <HiTrash className={'text-gray-400'} size={'20'}/>
+                </div>
+
               </div>
             </div>
 
-            <div className="flex border rounded-xl items-center justify-start  gap-3  p-4  dark:border-neutral-700 ">
+            <div className="flex border-b-2  items-center justify-start  gap-3  p-4  dark:border-neutral-700 ">
               {/*<div*/}
               {/*  className={*/}
               {/*    "p-2 rounded-full  bg-neutral-200 flex items-center justify-center"*/}
@@ -107,46 +111,49 @@ export const MessagesScreen = () => {
               {/*>*/}
               {/*  <h1 className={"text-xs "}>WS</h1>*/}
               {/*</div>*/}
-              <div className={"space-y-3"}>
+              <div className={"space-y-3 w-full"}>
                 <p className="dark:text-white text-sm text-black ">
                   What is Jetblue's PTO Policy ?
                 </p>
-                <p className="dark:text-neutral-400 text-xs text-neutral-500  line-clamp-1">
-                  17 July 2023 at 12:00 PM
-                </p>
+                <div className={'w-full inline-flex justify-between items-center'}>
+                  <p className="dark:text-neutral-400  text-xs text-neutral-500  line-clamp-1">
+                    17 July 2023 at 12:00 PM
+                  </p>
+                  <HiTrash className={'text-gray-400'} size={'20'}/>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className={" flex flex-col gap-4 p-4 "}>
+          <div className={"w-full flex flex-col gap-4 p-4 "}>
             <button
-              type="button"
-              className="py-3  px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-indigo-500 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                type="button"
+                className="py-3  px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-purple-800 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
             >
               New Conversation
               <HiOutlinePlus size={22} />
             </button>
 
-            <div className="flex  border border-neutral-300  dark:border-neutral-700  justify-between  rounded-xl items-center  ">
-              <div className="flex items-center gap-4">
-                <img
-                  className="inline-block size-[32px] rounded-full"
-                  src="https://avatar.iran.liara.run/public/28"
-                  alt="Image Description"
-                />
-                <div>
-                  <h1 className="dark:text-white  text-sm font-bold">
-                    Albert Suzeme
-                  </h1>
-                  <p className="text-xs  text-neutral-500">Senior Manager </p>
-                </div>
-              </div>
+            {/*<div className="flex  border border-neutral-300  p-2 dark:border-neutral-700  justify-between  rounded-xl items-center  ">*/}
+            {/*  <div className="flex items-center gap-4">*/}
+            {/*    <img*/}
+            {/*      className="inline-block size-[32px] rounded-full"*/}
+            {/*      src="https://avatar.iran.liara.run/public/28"*/}
+            {/*      alt="Image Description"*/}
+            {/*    />*/}
+            {/*    <div>*/}
+            {/*      <h1 className="dark:text-white  text-sm font-bold">*/}
+            {/*        Albert Suzeme*/}
+            {/*      </h1>*/}
+            {/*      <p className="text-xs  text-neutral-500">Senior Manager </p>*/}
+            {/*    </div>*/}
+            {/*  </div>*/}
 
-              <HiChevronUp className={"text-black dark:text-white"} size={18} />
-            </div>
+            {/*  <HiChevronUp className={"text-black dark:text-white"} size={18} />*/}
+            {/*</div>*/}
           </div>
         </div>
-        <div className="flex-1 px-16 py-6 flex flex-col  dark:bg-neutral-900 bg-neutral-100">
+        <div className="flex-1 px-16 py-6 flex flex-col  dark:bg-neutral-900">
           {/*<div*/}
           {/*  className={*/}
           {/*    "h-20 border-b dark:border-neutral-700 bg-white dark:bg-neutral-800"*/}
@@ -159,7 +166,7 @@ export const MessagesScreen = () => {
                 src="https://avatar.iran.liara.run/public/32"
                 alt="Image Description"
               />
-              <div className="bg-neutral-900 dark:bg-white  p-4 mt-3 rounded-tl-3xl  rounded-br-3xl rounded-bl-3xl">
+              <div className="bg-purple-800 dark:bg-white  p-4 mt-3 rounded-tl-3xl  rounded-br-3xl rounded-bl-3xl">
                 <p className="text-sm dark:text-black font-medium text-white leading-relaxed">
                   What is Jetblue's PTO Policy ?
                 </p>
@@ -170,7 +177,7 @@ export const MessagesScreen = () => {
               <div className="dark:bg-white bg-[#00205b] p-3 rounded-full">
                 <RiRobot2Line className=" dark:text-[#00205b] text-white size-[24px]" />
               </div>
-              <div className="bg-white  dark:bg-neutral-800 dark:border-neutral-700  flex-col gap-4 flex p-4 border  mt-3  rounded-tr-3xl rounded-br-3xl rounded-bl-3xl">
+              <div className="bg-neutral-100  dark:bg-neutral-800 dark:border-neutral-700  flex-col gap-4 flex p-4 border  mt-3  rounded-tr-3xl rounded-br-3xl rounded-bl-3xl">
                 <p className="text-sm dark:text-white leading-relaxed">
                   JetBlue's Paid Time Off (PTO) policy allows for flexibility
                   combining vacation, illness, personal time, family time,
@@ -182,7 +189,7 @@ export const MessagesScreen = () => {
                   required by law.
                 </p>
 
-                <div className=" inline-flex items-center gap-2 p-4 dark:bg-neutral-700 dark:border-neutral-600 bg-gray-100 border border-gray-200 rounded-xl">
+                <div className=" inline-flex items-center gap-2 p-4 dark:bg-neutral-700 dark:border-neutral-600 bg-white border border-gray-200 rounded-xl">
                   <TbWorldCheck size={24} className="dark:text-white" />
                   <p className="text-sm dark:text-white">
                     Source: JetBlue Crewmember Blue Book.pdf, page number
@@ -197,7 +204,7 @@ export const MessagesScreen = () => {
                 src="https://avatar.iran.liara.run/public/32"
                 alt="Image Description"
               />
-              <div className="bg-neutral-900 dark:bg-white  p-4 mt-3 rounded-tl-3xl  rounded-br-3xl rounded-bl-3xl">
+              <div className="bg-purple-800 dark:bg-white  p-4 mt-3 rounded-tl-3xl  rounded-br-3xl rounded-bl-3xl">
                 <p className="text-sm dark:text-black  font-medium text-white leading-relaxed">
                   What is the maximum number of weeks of FML can I request to
                   take off in a year? What does CASM stand for ?
