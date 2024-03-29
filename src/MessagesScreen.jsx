@@ -29,7 +29,7 @@ export const MessagesScreen = () => {
   return (
     <>
       <div className="flex h-screen w-full">
-        <div className=" flex flex-col gap-8 w-[6%] border-r dark:border-neutral-700 items-center justify-between px-4 py-6 dark:bg-neutral-800 ">
+        <div className=" flex flex-col gap-2 w-[6%] border-r dark:border-neutral-700 items-center justify-between px-4 py-6 dark:bg-neutral-800 ">
           <img
             className="inline-block size-[32px] rounded-full"
             src="https://avatar.iran.liara.run/public/28"
@@ -69,18 +69,18 @@ export const MessagesScreen = () => {
             alt="Image Description"
           />
         </div>
-        <div className=" flex flex-col w-[25%] gap-8 border-r justify-between p-6 dark:border-neutral-700   dark:bg-neutral-800 ">
-          <div className="flex flex-col gap-2">
-            <h1 className="dark:text-white  text-lg font-bold">Messages</h1>
+        <div className=" flex flex-col w-[25%] gap-0 border-r justify-between dark:border-neutral-700   dark:bg-neutral-800 ">
+          <div className="flex flex-col p-4 gap-3">
+            <h1 className="dark:text-white  text-xl font-bold">Messages</h1>
             <input
               type="text"
-              className="w-full px-4 py-2 dark:bg-neutral-800 border  border-neutral-200  dark:border-neutral-700 rounded-xl"
+              className="w-full px-4 py-2 bg-neutral-100 border-neutral-200 dark:bg-neutral-800 border   dark:border-neutral-700 rounded-xl"
               placeholder="Search here"
             />
           </div>
 
-          <div className="flex flex-1  flex-col  gap-4 ">
-            <div className="flex  items-center bg-neutral-100 rounded-xl  gap-3 dark:bg-neutral-700 p-4  dark:border-neutral-700 ">
+          <div className="flex flex-1  flex-col px-4  gap-2 ">
+            <div className="flex border rounded-xl border-blue-200 bg-blue-100 dark:bg-neutral-700 items-center justify-start  gap-3  p-4  dark:border-neutral-600 ">
               {/*<div*/}
               {/*  className={*/}
               {/*    "p-2 rounded-full  bg-neutral-200 flex items-center justify-center"*/}
@@ -89,17 +89,17 @@ export const MessagesScreen = () => {
               {/*  <h1 className={"text-xs "}>WS</h1>*/}
               {/*</div>*/}
               <div className={"space-y-3"}>
-                <p className="dark:text-white text-sm text-black leading-relaxed ">
+                <p className="dark:text-white text-sm text-black ">
                   What is the maximum number of weeks of FML can I request to
                   take off in a year? What does CASM stand for ?
                 </p>
-                <p className="dark:text-neutral-400 text-xs text-neutral-500  line-clamp-1">
+                <p className="dark:text-neutral-400  text-xs text-neutral-500  line-clamp-1">
                   17 July 2023 at 12:00 PM
                 </p>
               </div>
             </div>
 
-            <div className="flex dark:border rounded-xl  items-center justify-start  gap-3  p-4  dark:border-neutral-700 ">
+            <div className="flex border rounded-xl items-center justify-start  gap-3  p-4  dark:border-neutral-700 ">
               {/*<div*/}
               {/*  className={*/}
               {/*    "p-2 rounded-full  bg-neutral-200 flex items-center justify-center"*/}
@@ -118,16 +118,16 @@ export const MessagesScreen = () => {
             </div>
           </div>
 
-          <div className={" flex flex-col gap-4 "}>
+          <div className={" flex flex-col gap-4 p-4 "}>
             <button
               type="button"
-              className="py-3  px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-500 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="py-3  px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-indigo-500 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
             >
               New Conversation
               <HiOutlinePlus size={22} />
             </button>
 
-            <div className="flex  border border-neutral-300  dark:border-neutral-700 p-2 justify-between  rounded-xl items-center  ">
+            <div className="flex  border border-neutral-300  dark:border-neutral-700  justify-between  rounded-xl items-center  ">
               <div className="flex items-center gap-4">
                 <img
                   className="inline-block size-[32px] rounded-full"
@@ -146,7 +146,12 @@ export const MessagesScreen = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1  flex flex-col p-6  dark:bg-neutral-900 bg-neutral-100">
+        <div className="flex-1 px-16 py-6 flex flex-col  dark:bg-neutral-900 bg-neutral-100">
+          {/*<div*/}
+          {/*  className={*/}
+          {/*    "h-20 border-b dark:border-neutral-700 bg-white dark:bg-neutral-800"*/}
+          {/*  }*/}
+          {/*></div>*/}
           <div className="flex-1 gap-8 flex flex-col ">
             <div className="flex w-[70%] self-end flex-row-reverse  gap-2">
               <img
@@ -192,8 +197,8 @@ export const MessagesScreen = () => {
                 src="https://avatar.iran.liara.run/public/32"
                 alt="Image Description"
               />
-              <div className="bg-neutral-900 dark:bg-blue-500  p-4 mt-3 rounded-tl-3xl  rounded-br-3xl rounded-bl-3xl">
-                <p className="text-sm dark:text-white font-medium text-white leading-relaxed">
+              <div className="bg-neutral-900 dark:bg-white  p-4 mt-3 rounded-tl-3xl  rounded-br-3xl rounded-bl-3xl">
+                <p className="text-sm dark:text-black  font-medium text-white leading-relaxed">
                   What is the maximum number of weeks of FML can I request to
                   take off in a year? What does CASM stand for ?
                 </p>
@@ -249,7 +254,7 @@ export const MessagesScreen = () => {
             {/*  </div>*/}
             {/*</div>*/}
           </div>
-          <div className="flex gap-4 justify-between items-center">
+          <div className="flex gap-4  justify-between items-center">
             <input
               className="flex-1 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 dark:border focus:outline-0  rounded-2xl py-3 px-4"
               placeholder="Type a message or type '/' to select a prompt"
